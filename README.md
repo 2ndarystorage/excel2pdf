@@ -50,6 +50,19 @@
 - **Partial**: Core conversion and overlay flow exists, but it is Windows/Excel-dependent and has minimal validation and no tests.
 
 ## Program Summary
+- Streamlit web app for converting an uploaded `.xlsx` to PDF via Microsoft Excel COM automation.
+- Allows filling blank cells before export and optionally overlays a text string at X/Y coordinates on the PDF.
+
+## How to Use
+- Install dependencies: `pip install -r requirements.txt` (Not verified)
+- Run the app: `streamlit run app.py` (Not verified)
+- In the UI: upload an `.xlsx`, fill any blanks, optionally set overlay text and X/Y, then convert and download. (Not verified)
+- Requires Windows with a locally installed Excel application. (Not verified)
+
+## Completion Status
+- **Partial**: The main flow is implemented, but it depends on Windows + Excel and has no tests or robust error handling.
+
+## Program Summary
 - Streamlit app that reads an uploaded `.xlsx`, lets you fill blank cells, and exports to PDF via Excel COM automation.
 - Optional text overlay is drawn on each PDF page at user-provided X/Y coordinates using ReportLab and PyPDF2.
 
